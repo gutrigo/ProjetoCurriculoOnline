@@ -1,0 +1,19 @@
+<div id="education" class="gray">
+  <h2>Educação</h2>
+  <div class="education-entry">
+    <div *ngFor="let school of schools">
+      <a href="{{ school.url }}">{{ school.name }} - {{ school.degree }}</a>
+      <div class="date-text">{{ school.graduationYear }}</div>
+      <div class="location-text">{{ school.city }}</div>
+
+      <em>
+        <br>Curso: {{ school.major }}</em>
+    </div>
+    <h3>Cursos Online</h3>
+    <div *ngFor="let ocourse of ocourses">
+      <a href="{{ ocourse.url }}"> {{ ocourse.major }} - {{ ocourse.name }}</a>
+      <div class="date-text">{{ ocourse.graduationyear }}</div>
+      <br>
+    </div>
+  </div>
+</div>

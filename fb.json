@@ -1,0 +1,192 @@
+{
+
+  "bio": [{
+        "name": "Gustavo Trigo",
+        "role": "Desenvolvedor Web",
+        "welcomeMessage": "Fácil Aprendizado foco nos resultados e qualidade na entrega dos serviços",
+        "picture": "../../assets/eu.jpg"
+    }],
+  "skills": [
+    {
+      "id": 0,
+      "skill": "HTML5"
+  },
+  {
+      "id": 1,
+      "skill": "CSS3"
+  },
+  {
+      "id": 2,
+      "skill": "JavaScript"
+  },
+  {
+      "id": 3,
+      "skill": "GruntJs"
+  },
+  {
+      "id": 4,
+      "skill": "Bootstrap"
+  },
+  {
+      "id": 5,
+      "skill": "Jquery"
+  },
+  {
+      "id": 6,
+      "skill": "AngularJs"
+  },
+  {
+      "id": 7,
+      "skill": "Angular"
+  },
+  {
+      "id": 8,
+      "skill": "Java"
+  }],
+"contact": {
+    "id": 0,
+    "email": "gtrigao@gmail.com",
+    "cell": "+55 11 98136-5796",
+    "githubUser": "gutrigo",
+    "location": "Barueri-sp"
+},
+"works": [{
+    "id": 0,
+    "title": "Analista de Sistemas Sr",
+    "employer": "Wipro",
+    "dates": "dez de 2016 - até o momento. 1 ano",
+    "location": "Av. Andrômeda, 5700 - Alphaville Empresarial, Barueri - SP",
+    "description": "Principais Atividades: Modelagem de dados, criação e manutenção de JCL e estrutura no CONTROL-M, desenvolvimento em COBOL, IMS, CICS, DB2, JAVA, Javascript, HTML5 e proccedures em sql. Controle de evolução e gestão de projetos."
+},
+{
+    "id": 1,
+    "title": "Desenvolvedor Web Freelancer",
+    "employer": "Agência de Tecnologia Agilizeware do Brasil",
+    "dates": "jan de 2018 - mar de 2018 - 3 meses",
+    "location": "Rua Chui - Sp - São Paulo",
+    "description": "Desenvolvimento de aplicação mobile utilizando Angular4 e IONIC, integração com backend NodeJs."
+},
+{
+    "id": 2,
+    "title": "Analista de Sistemas Sr",
+    "employer": "TODO!",
+    "dates": "jul de 2014 - dez de 2016. 2 anos 6 meses",
+    "location": "Av. Andrômeda, 5700 - Alphaville Empresarial, Barueri - SP",
+    "description": "Principais Atividades: Modelagem de dados, carga e manutenção em tabelas DB2, criação e execução de BACKUPS, REORGS, RUNSTATS, COPYS e LOADS, criação e manutenção de JCL e estrutura no CONTROL-M, desenvolvimento em COBOL, IMS, CICS e DB2, AWB, proccedures em sql."
+},
+{
+    "id": 3,
+    "title": "Analista de Sistemas Mainframe",
+    "employer": "Capgemini",
+    "dates": "nov de 2012 - jul de 2014. 1 ano 9 meses",
+    "location": "Alameda Araguaia - Barueri-Sp",
+    "description": "Desenvolvimento em COBOL, CICS e DB2, levantamento das regras de negocio e dos requisitos necessários para o desenvolvimento do sistema, resolução de incidentes, criação e execução de roteiros de teste batch, evidencias de teste, fluxo de processamento das rotinas, controle de evolução, preparação de ambiente desde cargas iniciais e manutenção em tabelas DB2 à criação dos Jobs e estrutura no CONTROL-M, acompanhamento e suporte na execução das rotinas diárias nos ambientes de Teste integrado e Homologação."
+},
+{
+    "id": 4,
+    "title": "Programador PL",
+    "employer": "Capgemini",
+    "dates": "abr de 2012 - nov de 2012. 8 meses",
+    "location": "Alameda Araguaia - Barueri-Sp",
+    "description": "Desenvolvimento em COBOL, CICS e DB2, levantamento das regras de negocio e dos requisitos necessários para o desenvolvimento do sistema, resolução de incidentes, criação e execução de roteiros de teste batch, evidencias de teste, fluxo de processamento das rotinas, controle de evolução, preparação de ambiente desde cargas iniciais e manutenção em tabelas DB2 à criação dos Jobs e estrutura no CONTROL-M, acompanhamento e suporte na execução das rotinas diárias nos ambientes de Teste integrado e Homologação."
+},
+{
+    "id": 5,
+    "title": "Analista de Produção Jr",
+    "employer": "Carriers Interconnect",
+    "dates": "jun de 2010 - set de 2010. 4 meses",
+    "location": "Rua 7 de abril - São Paulo-Sp",
+    "description": "Suporte a produção do Sistema de Faturamento Análise de JOBS, instruções para retomadas de processamento, montagem de JCL para processamentos especiais e montagem de Schedule. Banco de dados: Acesso as tabelas DB2 via SQL."
+},
+{
+    "id": 6,
+    "title": "Analista BI",
+    "employer": "Carriers Interconnect",
+    "dates": "set de 2010 - fev de 2011. 6 meses",
+    "location": "Rua Hadock Lobo - São Paulo-Sp",
+    "description": "Documentação, criação e implementação de querys, análise de tabelas para modelagem de dados, levantamento das regras de negócio do cliente. Criação, alteração, atualização e carga em tabelas SQL-SERVER com informações extraídas das bases mainframe(DB2) utilizando linguagem TSQL."
+},
+{
+    "id": 7,
+    "title": "Trainne",
+    "employer": "Carriers Interconnect",
+    "dates": "dez de 2009 - jun de 2010. 6 meses",
+    "location": "Rua 7 de abril - São Paulo-Sp",
+    "description": "Suporte a produção do Sistema de Faturamento, Análise de JOBS, instruções para retomadas de processamento, montagem de JCL para processamentos especiais e montagem de Schedule. Banco de dados: Acesso as tabelas DB2 via SQL."
+}],
+"schools": [{
+
+    "id": 0,
+    "name": "GPTI",
+    "city": "Praça da República, 128 - República, São Paulo - SP",
+    "degree": "Técnico",
+    "major": "Cobol, CICS, DB2, Modelagem de Dados, JCL, Z/OS",
+    "graduationYear": "2008",
+    "url": null
+},
+{
+    "id": 1,
+    "name": "Caelum",
+    "city": "Rua Vergueiro, 3185 - Vila Mariana, São Paulo - SP",
+    "degree": "Técnico",
+    "major": "Java, Orientação a Objetos",
+    "graduationYear": "2016",
+    "url": "https://www.caelum.com.br/curso-java-orientacao-objetos"
+},
+{
+    "id": 2,
+    "name": "Caelum",
+    "city": "Rua Vergueiro, 3185 - Vila Mariana, São Paulo - SP",
+    "degree": "Técnico",
+    "major": "Java, Desenvolvimento Web",
+    "graduationYear": "2016",
+    "url": "https://www.caelum.com.br/curso-java-web"
+},
+{
+    "id": 3,
+    "name": "AgilizeWare",
+    "city": "Rua Chuí, 41 - Paraíso, São Paulo - SP",
+    "degree": "Técnico",
+    "major": "Carreira FullStack Angular + Java",
+    "graduationYear": "2018",
+    "url": "http://www.programar.com.vc/carreira-full-stack-angular/"
+}],
+"ocourse": [{
+
+    "id": 0,
+    "name": "Alura",
+    "major": "HTTP: Etendendo a web por baixo dos panos",
+    "graduationYear": "2017",
+    "url": "https://cursos.alura.com.br/user/gtrigao/course/http-fundamentos/formalCertificate"
+},
+{
+    "id": 1,
+    "name": "Alura",
+    "major": "Marketing Digital: O primeiro passo antes de criar um site",
+    "graduationYear": "2017",
+    "url": "https://cursos.alura.com.br/user/gtrigao/course/primeiros-passos-antes-de-criar-um-site/formalCertificate"
+},
+{
+    "id": 2,
+    "name": "udacity",
+    "major": "Desenvolvimento Web Front-End",
+    "graduationYear": "2017",
+    "url": "https://br.udacity.com/course/front-end-web-developer-nanodegree--nd001-br-advanced"
+}],
+"projects": [{
+    "id": 0,
+    "title": "Descontos Happy",
+    "dates": "jan 2018",
+    "description": "Somos uma plataforma de soluções para o varejo físico, que possui sistemas interativos e gamificados de mobile marketing, IoT (internet das coisas) e CRM, direcionados para o relacionamento e fidelização de clientes, engajamento de marcas, aumento de...",
+    "imagesUrl": "../../assets/descontosHappy.jpg",
+    "urlSite": "http://www.descontoshappy.com.br/"
+},
+{
+    "id": 1,
+    "title": "Noix! Skateboard",
+    "dates": "dez 2017",
+    "description": "App de cultura urbana, skate, arte, musica e tecnologia.",
+    "imagesUrl": "../../assets/noix-app.png",
+    "urlSite": "https://appfirebase-e17bc.firebaseapp.com/"
+}]
+}

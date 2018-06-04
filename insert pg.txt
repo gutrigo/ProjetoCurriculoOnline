@@ -1,0 +1,30 @@
+INSERT INTO public.work(
+            id, title, employer, dates, location, description)
+    VALUES (8, 'Trainne', 'Carriers Interconnect', 'dez de 2009 - jun de 2010', 'Rua 7 de abril - São Paulo-Sp', 'Suporte a produção do Sistema de Faturamento, Análise de JOBS, instruções para retomadas de processamento, montagem de JCL para processamentos especiais e montagem de Schedule. Banco de dados: Acesso as tabelas DB2 via SQL.');
+
+INSERT INTO public.skills(
+            id, skill)
+    VALUES (8, 'Java');
+
+INSERT INTO public.bio(
+            id, nome, role, "welcomeMessage", picture)
+    VALUES (0, 'Gustavo Trigo', 'Desenvolvedor Web', 'Fácil Aprendizado foco nos resultados e qualidade na entrega dos serviços.', '../../asets/eu.jpg');
+
+INSERT INTO public.schools(
+            id, name, city, degree, major, "graduationYear", url)
+    VALUES (3,'AgilizeWare', 'Rua Chuí, 41 - Paraíso, São Paulo - SP', 'Técnico', 'Carreira FullStack Angular + Java', '2018', 'http://www.programar.com.vc/carreira-full-stack-angular/7');
+
+INSERT INTO public.contact(
+            id, email, cell, "githubUser", location)
+    VALUES (0, 'gtrigao@gmail.com', '11 98136-5796', 'gutrigo', 'Barueri-Sp')
+
+INSERT INTO public.project(
+            id, title, dates, description, "imagesUrl", "urlSite")
+    VALUES (1, 'Noix! Skateboard', 'dez 2017', 'App de cultura urbana, skate, arte, musica e tecnologia.', 
+		'../../assets/noix-app.png', 'https://appfirebase-e17bc.firebaseapp.com/');
+
+INSERT INTO public.ocourses(
+            id, name, major, "graduationYear", url)
+    VALUES (2, 'Alura', 'Marketing Digital: O primeiro passo antes de criar um site', '2017', 
+    'https://cursos.alura.com.br/user/gtrigao/course/primeiros-passos-antes-de-criar-um-site/formalCertificate
+

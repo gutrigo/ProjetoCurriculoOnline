@@ -1,0 +1,8 @@
+<div id="workExperience" class="gray">
+    <h2>Experiencia de Trabalho</h2>
+    <div class="work-entry" *ngFor="let work of works">
+        <a href="#" >{{ work.employer }} - {{ work.title }}</a>
+        <div class="date-text">{{ work.dates }}</div>
+        <p><br>{{ work.description }}</p><br>
+    </div>
+</div>

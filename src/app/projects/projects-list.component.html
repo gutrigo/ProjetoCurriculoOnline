@@ -1,0 +1,9 @@
+<div id="projects">
+    <h2>Projetos</h2>
+    <div class="project-entry" *ngFor="let project of projects">
+        <a href="{{ project.urlSite }}">{{ project.title }}</a>
+        <div class="date-text">{{ project.dates }}</div>
+        <p><br>{{ project.description }}</p>
+        <img class="project-image" src="{{ project.imagesUrl }}">
+    </div>
+</div>
