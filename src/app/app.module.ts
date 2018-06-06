@@ -16,6 +16,8 @@ import { WorksService } from './services/works/works.service';
 import { ProjectsService } from './services/projects/projects.service';
 import { SchoolsService } from './services/schools/schools.service';
 import { OcourseService } from './services/ocourse/ocourse.service';
+import { ModalComponent } from './modal/modal.component';
+import { CardComponent } from './card/card.component';
 
 
 @NgModule({
@@ -26,7 +28,9 @@ import { OcourseService } from './services/ocourse/ocourse.service';
     EducationListComponent,
     MapDivComponent,
     FooterComponent,
-    WorksListComponent
+    WorksListComponent,
+    ModalComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,

@@ -1,3 +1,40 @@
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+  width: 400px;
+  height: 627px;
+  margin: 200px;
+}
+.item {
+  /* O flex: 1; é necessário para que cada item se expanda ocupando o tamanho máximo do container. */
+  flex: 1;
+  margin: 20px;
+  text-align: center;
+  font-size: 1.5em;
+}
+.container {
+  max-width: 400px;
+  margin: 0;
+  display: flex;
+  border: 1px solid #ccc;
+}
+.row {
+  flex-direction: row;
+}
+p {
+  padding: 2%, 2%, 2%, 2%;
+}
+
+/* Add rounded corners to the top left and the top right corner of the image */
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+a {
+  text-decoration: inherit; /* no underline */
+}
+
 body,
 div,
 ul,
@@ -11,17 +48,36 @@ h5,
 h6 {
   padding: 0;
   margin: 0;
-  font-family: 'Finger Paint', cursive;
-
+  font-family: "Finger Paint", cursive;
 }
 
 .project-image {
-  width: 300px;
+  width: 200px;
 }
 
-.infoBox { background-color: #FFF; width: 300px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; border: 2px solid #f5a623; border-radius: 3px; margin-top: 10px }
-.infoBox p { padding: 0 15px }
-.infoBox:before { border-left: 10px solid transparent; border-right: 10px solid transparent; border-bottom: 10px solid #f5a623; top: -10px; content: ""; height: 0; position: absolute; width: 0; left: 138px }
+.infoBox {
+  background-color: #fff;
+  width: 300px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  border: 2px solid #f5a623;
+  border-radius: 3px;
+  margin-top: 10px;
+}
+.infoBox p {
+  padding: 0 15px;
+}
+.infoBox:before {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #f5a623;
+  top: -10px;
+  content: "";
+  height: 0;
+  position: absolute;
+  width: 0;
+  left: 138px;
+}
 
 .clear-fix {
   overflow: auto;
@@ -33,16 +89,11 @@ h6 {
   padding: 0 5%;
 }
 
-
-h1, .topnav {
+h1 {
   font-size: 30px;
   color: #f5a623;
   line-height: 48px;
   display: inline;
-}
-
-.topnav {
-  font-size: 15px;
 }
 
 h2 {
@@ -72,9 +123,7 @@ h3,
 h4,
 h5 {
   padding: 10px 5%;
-
 }
-
 
 .date-text {
   font-style: italic;
@@ -90,7 +139,6 @@ h5 {
   color: #999;
   line-height: 16px;
   float: right;
-
 }
 
 p {
@@ -102,7 +150,7 @@ p {
 a {
   color: #1199c3;
   text-decoration: none;
-  margin: 10px;
+  margin-top: 10px;
   display: block;
 }
 
@@ -145,7 +193,7 @@ a {
 
 /* TODO: Replace with image later */
 #header {
-  background-color: #626066;
+  background-color: #484848;
 }
 
 .flex-box {
@@ -153,11 +201,8 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-
-}
-.name {
-  justify-content: flex-start;
+  justify-content: space-around;
+  padding: 10px;
 }
 
 .flex-column {
@@ -171,18 +216,6 @@ a {
   padding: 2.5% 5%;
 }
 
-ul {
-  list-style-type: none;
-}
-
-.biopic {
-  float: left;
-  padding: 10px;
-  width: 200px;
-  display: none;
-  border-radius: 50%;
-}
-
 img {
   padding: 10px;
 }
@@ -191,74 +224,16 @@ span {
   margin: auto;
   padding: 05px;
 }
-
-#lets-connect {
-  text-align: center;
-}
-
-.testemap {
-  display: relative;
-  z-index: 99;
-  float: initial;
-}
-
-.btnBox {
-  background-color: #626066;
-  border: #626066 0px;
-  box-shadow: 0 0 0 0;
-  border: 0 none;
-  outline: 0;
-}
-
-/* Media queries to handle various device widths */
-
-@media only screen and (max-width: 1024px) {
-  #lets-connect {
-    margin-top: 5%;
+@media only screen and (min-width: 361px) and (max-width: 422px) {
+  .card {
+    width: 93%;
+    height: 95%;
   }
 }
 
-@media only screen and (max-width:900px) {
-  .biopic {
-    width: 175px;
+@media only screen and (max-width: 360px) {
+  .card {
+    width: 93%;
+    height: 95%;
   }
 }
-
-@media only screen and (max-width: 750px) {
-  #lets-connect {
-    margin-top: 10%;
-  }
-  .biopic {
-    width: 150px;
-  }
-  .welcome-message {
-    display: none;
-  }
-  #skills-h3{
-    display: none;
-  }
-  h1 {
-    font-size: 20px;
-  }
-}
-
-#map {
-  display: block;
-  height: 93%;
-  margin: 0 5%;
-}
-
-#mapDiv {
-  height: 400px;
-  width: 100%;
-  padding-bottom: 5%;
-}
-
-@media only screen and (min-width: 750px) {
-  #skills-h3,
-  .biopic {
-    display: block;
-  }
-}
-
-

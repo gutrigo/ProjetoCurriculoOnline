@@ -1,8 +1,9 @@
+<app-modal *ngIf="modal == true"></app-modal>
 <div id="header" class="center-content clear-fix">
   <div class="flex-box">
     <h1 id="name" class="name"> {{ bio[0].name }} </h1>
     <div>
-      <a class="flex-item topnav" href="#home">AngularJs</a>
+      <button class="flex-item topnav btnBox" (click)='openModal()' >AngularJs</button>
       <a class="flex-item topnav" href="#home">Angular</a>
     </div>
   </div>

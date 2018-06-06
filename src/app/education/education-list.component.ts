@@ -7,6 +7,8 @@ import { Observable } from 'rxjs';
 import 'rxjs/add/operator/map';
 import { catchError, map, tap } from 'rxjs/operators';
 import { OcourseService } from '../services/ocourse/ocourse.service';
+import { Schools } from '../models/schools';
+import { OnlineCourse } from '../models/ocourse';
 
 
 @Component({
@@ -15,8 +17,8 @@ import { OcourseService } from '../services/ocourse/ocourse.service';
   styleUrls: ['./education-list.component.css']
 })
 export class EducationListComponent implements OnInit {
-  schools: any[];
-  ocourses: any[];
+  schools: Schools[];
+  ocourses: OnlineCourse[];
 
   constructor(
     private _serviceSchools: SchoolsService, private _serviceOcourse: OcourseService

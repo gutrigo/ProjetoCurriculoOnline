@@ -1,4 +1,4 @@
-<div id="projects">
+<!--<div id="projects">
     <h2>Projetos</h2>
     <div class="project-entry" *ngFor="let project of projects">
         <a href="{{ project.urlSite }}">{{ project.title }}</a>
@@ -6,4 +6,10 @@
         <p><br>{{ project.description }}</p>
         <img class="project-image" src="{{ project.imagesUrl }}">
     </div>
+</div>-->
+
+<div class="container">
+
+    <app-card [param]="project" *ngFor="let project of projects"></app-card>
+
 </div>

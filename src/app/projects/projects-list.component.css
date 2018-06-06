@@ -1,3 +1,19 @@
+
+/*
+      These are the responsive styles. Throw some breakpoints in here!
+      */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.box {
+  width: 100%;
+}
+
+/***************************************/
 body,
 div,
 ul,
@@ -11,17 +27,36 @@ h5,
 h6 {
   padding: 0;
   margin: 0;
-  font-family: 'Finger Paint', cursive;
-
+  font-family: "Finger Paint", cursive;
 }
 
 .project-image {
-  width: 150px;
+  width: 100px;
 }
 
-.infoBox { background-color: #FFF; width: 300px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; border: 2px solid #f5a623; border-radius: 3px; margin-top: 10px }
-.infoBox p { padding: 0 15px }
-.infoBox:before { border-left: 10px solid transparent; border-right: 10px solid transparent; border-bottom: 10px solid #f5a623; top: -10px; content: ""; height: 0; position: absolute; width: 0; left: 138px }
+.infoBox {
+  background-color: #fff;
+  width: 300px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  border: 2px solid #f5a623;
+  border-radius: 3px;
+  margin-top: 10px;
+}
+.infoBox p {
+  padding: 0 15px;
+}
+.infoBox:before {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #f5a623;
+  top: -10px;
+  content: "";
+  height: 0;
+  position: absolute;
+  width: 0;
+  left: 138px;
+}
 
 .clear-fix {
   overflow: auto;
@@ -67,9 +102,7 @@ h3,
 h4,
 h5 {
   padding: 10px 5%;
-
 }
-
 
 .date-text {
   font-style: italic;
@@ -85,7 +118,6 @@ h5 {
   color: #999;
   line-height: 16px;
   float: right;
-
 }
 
 p {
@@ -152,13 +184,11 @@ a {
   padding: 10px;
 }
 
-
 .flex-column {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   padding: 10px;
-
 }
 
 .center-content {
@@ -204,7 +234,7 @@ span {
   }
 }
 
-@media only screen and (max-width:900px) {
+@media only screen and (max-width: 900px) {
   .biopic {
     width: 175px;
   }
@@ -220,7 +250,7 @@ span {
   .welcome-message {
     display: none;
   }
-  #skills-h3{
+  #skills-h3 {
     display: none;
   }
 }
@@ -237,11 +267,9 @@ span {
   padding-bottom: 5%;
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (max-width: 750px) {
   #skills-h3,
   .biopic {
     display: block;
   }
 }
-
-
