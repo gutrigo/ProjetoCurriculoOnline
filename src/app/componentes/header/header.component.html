@@ -1,43 +1,49 @@
-<app-modal *ngIf="modal == true"></app-modal>
+<app-modal id="angularJs" *ngIf="modal == true"></app-modal>
+
+<app-modal id="library" *ngIf="library == true">
+    <app-card></app-card>
+</app-modal>
+
 <div id="header" class="center-content clear-fix">
   <div class="flex-box">
-    <h1 id="name" class="name"> {{ bio[0].name }} </h1>
+    <h1 id="name" class="name"> {{ bio.name }} </h1>
     <div>
+      <button class="flex-item topnav btnBox" (click)='openLibrary()' >Biblioteca de Componentes</button>
       <button class="flex-item topnav btnBox" (click)='openModal()' >AngularJs</button>
       <a class="flex-item topnav" href="#home">Angular</a>
     </div>
   </div>
   <br>
-  <span>{{ bio[0].role }}</span>
+  <span>{{ bio?.role }}</span>
   <hr>
   <ul id="topContacts" class="flex-box">
     <span class="flex-item">
       <span class="orange-text">email</span>
-      <span class="white-text"> {{ contact[0].email }} </span>
+      <span class="white-text"> {{ contact?.email }} </span>
     </span>
     <span class="flex-item">
       <span class="orange-text">mobile</span>
-      <span class="white-text"> {{ contact[0].cell }} </span>
+      <span class="white-text"> {{ contact?.cell }} </span>
     </span>
     <span class="flex-item">
       <span class="orange-text">github</span>
-      <span class="white-text"> {{ contact[0].githubuser }} </span>
+      <span class="white-text"> {{ contact?.githubuser }} </span>
     </span>
     <span class="flex-item">
       <span class="orange-text">location</span>
-      <span class="white-text"> {{ contact[0].location }} </span>
+      <span class="white-text"> {{ contact?.location }} </span>
     </span>
   </ul>
 
   <picture>
-    <img src="{{ bio[0].picture }}" class="biopic" alt="Foto de perfil">
+    <img src="{{ bio?.picture }}" class="biopic" alt="Foto de perfil">
   </picture>
 
-  <span class="welcome-message white-text ">{{ bio[0].welcomeMessage }}</span>
+  <span class="welcome-message white-text ">{{ bio?.welcomeMessage }}</span>
   <h3 id="skills-h3">Skills:</h3>
   <ul id="skills" class="flex-column">
     <li class="flex-item" *ngFor="let skill of skills">
-      <span class="white-text">{{ skill.skill }}</span>
+      <span class="white-text">{{ skill?.skill }}</span>
     </li>
   </ul>'
 

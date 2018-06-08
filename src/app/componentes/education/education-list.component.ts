@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { SchoolsService } from '../services/schools/schools.service';
+import { SchoolsServices } from '../../services/schools/schools.service';
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 // tslint:disable-next-line:import-blacklist
 import { Observable } from 'rxjs';
 import 'rxjs/add/operator/map';
 import { catchError, map, tap } from 'rxjs/operators';
-import { OcourseService } from '../services/ocourse/ocourse.service';
-import { Schools } from '../models/schools';
-import { OnlineCourse } from '../models/ocourse';
+import { OcourseService } from '../../services/ocourse/ocourse.service';
+import { Schools } from '../../models/schools';
+import { OnlineCourse } from '../../models/ocourse';
 
 
 @Component({
@@ -21,7 +21,7 @@ export class EducationListComponent implements OnInit {
   ocourses: OnlineCourse[];
 
   constructor(
-    private _serviceSchools: SchoolsService, private _serviceOcourse: OcourseService
+    private _serviceSchools: SchoolsServices, private _serviceOcourse: OcourseService
   ) {}
 
   ngOnInit() {
@@ -30,7 +30,7 @@ export class EducationListComponent implements OnInit {
       this.schools = school;
     });
 
-    this._serviceOcourse.getOcourse().subscribe(ocourse => {
+    this._serviceOcourse.getOcourses().subscribe(ocourse => {
       this.ocourses = ocourse;
     });
   }

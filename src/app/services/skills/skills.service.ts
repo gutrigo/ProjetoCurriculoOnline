@@ -6,13 +6,14 @@ import 'rxjs/add/operator/map';
 import { catchError, map, tap } from 'rxjs/operators';
 import { Bio } from '../../models/bio';
 import { Skills } from '../../models/skills';
+import { SkillsServiceInterface } from '../../interfaces/skills-service-interface';
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
 };
 
 @Injectable()
-export class SkillsService {
+export class SkillsService implements SkillsServiceInterface {
 
 
   private apiUrl = 'http://localhost:8080/jersey/rest/cv/'; // URL to web api

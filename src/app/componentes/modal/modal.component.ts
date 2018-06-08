@@ -8,6 +8,11 @@ import { Component, OnInit } from '@angular/core';
 
 export class ModalComponent implements OnInit {
 
+  card: {
+    imagesUrl: string;
+    title: string;
+    url: string;
+  };
   constructor() { }
 
   ngOnInit() {

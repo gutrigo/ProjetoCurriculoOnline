@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
-import { ContactService } from '../services/contact/contact.service';
+import { ContactService } from '../../services/contact/contact.service';
 
 @Component({
   selector: 'app-footer',

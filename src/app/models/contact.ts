@@ -2,6 +2,6 @@ export class Contact {
   id: number;
   email: string;
   cell: string;
-  githubUser: string;
+  githubuser: string;
   location: string;
 }
