@@ -1,16 +1,10 @@
-<app-modal id="angularJs" *ngIf="modal == true"></app-modal>
-
-<app-modal id="library" *ngIf="library == true">
-    <app-card></app-card>
-</app-modal>
+<app-modal id="library" *ngIf="library == true"></app-modal>
 
 <div id="header" class="center-content clear-fix">
   <div class="flex-box">
-    <h1 id="name" class="name"> {{ bio.name }} </h1>
+    <h1 id="name" class="name"> {{ bio?.name }} </h1>
     <div>
-      <button class="flex-item topnav btnBox" (click)='openLibrary()' >Biblioteca de Componentes</button>
-      <button class="flex-item topnav btnBox" (click)='openModal()' >AngularJs</button>
-      <a class="flex-item topnav" href="#home">Angular</a>
+      <button class="flex-item topnav btnBox" (click)='openLibrary()' >Prateleira de Componentes</button>
     </div>
   </div>
   <br>

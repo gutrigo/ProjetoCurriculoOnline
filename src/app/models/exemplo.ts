@@ -1,4 +1,4 @@
-export class Project {
+export class Exemplo {
   id: number;
   title: string;
   dates: string;

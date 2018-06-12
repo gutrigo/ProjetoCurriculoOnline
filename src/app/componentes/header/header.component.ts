@@ -6,6 +6,7 @@ import { Observable } from 'rxjs/Observable';
 import { ContactService } from '../../services/contact/contact.service';
 import { SkillsService } from '../../services/skills/skills.service';
 import { Contact } from '../../models/contact';
+import { Exemplo } from '../../models/exemplo';
 
 @Component({
   selector: 'app-header',
@@ -19,6 +20,7 @@ export class HeaderComponent implements OnInit {
   modal: boolean;
   library: boolean;
 
+
   constructor(
     private _serviceBio: BiografiaService,
     private _serviceContact: ContactService,
@@ -26,31 +28,25 @@ export class HeaderComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.getBio();
+    /*this.getBio();
     this.getContact();
-    this.getSkills();
+    this.getSkills();*/
+    /// this.getExemplo();
+    this.getBioMock();
+    this.getContactMock();
+    this.getSkillsMock();
   }
 
-  private getSkills() {
-    this._serviceSkills.
-    getSkills().subscribe(skill => this.skills = skill,
-      error => console.log(error),
-      () => console.log('Complete!'));
+  private getSkillsMock() {
+    this.skills = this._serviceSkills.getSkillsMock();
   }
 
-  private getContact() {
-    this._serviceContact
-      // tslint:disable-next-line:max-line-length
-      .getContact().subscribe(contact => this.contact = contact,
-        error => console.log(error),
-        () => console.log('Complete!' + this.contact));
+  private getContactMock() {
+    this.contact = this._serviceContact.getContactMock();
   }
 
-  private getBio() {
-    this._serviceBio.getBio().
-      subscribe(bio => this.bio = bio,
-        error => console.log(error),
-        () => console.log('Complete!' + this.bio));
+  private getBioMock() {
+    this.bio = this._serviceBio.getBioMock();
   }
 
   // When the user clicks on the button, open the modal
@@ -59,7 +55,7 @@ export class HeaderComponent implements OnInit {
   }
   // When the user clicks on the button, open the modal
   openLibrary() {
-    this.library = true;
+      this.library = true;
   }
 
   @HostListener('document:click', ['$event'])
@@ -78,4 +74,27 @@ export class HeaderComponent implements OnInit {
   private getBtnClose() {
     return document.getElementById('close');
   }
+
+   /* private getSkills() {
+    this._serviceSkills.
+    getSkills().subscribe(skill => this.skills = skill,
+      error => console.log(error),
+      () => console.log('getSkills Complete!'));
+  }*/
+
+    /*private getContact() {
+    this._serviceContact
+      // tslint:disable-next-line:max-line-length
+      .getContact().subscribe(contact => this.contact = contact,
+        error => console.log(error),
+        () => console.log('getContact Complete!'));
+  }*/
+
+  /*private getBio() {
+    this._serviceBio.getBio().
+      subscribe(bio => this.bio = bio,
+        error => console.log(error),
+        () => console.log('getBio Complete!'));
+  }*/
+
 }

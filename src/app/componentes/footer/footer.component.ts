@@ -15,6 +15,14 @@ export class FooterComponent implements OnInit {
   constructor( private _serviceContact: ContactService ) {}
 
   ngOnInit() {
-    this._serviceContact.getContact().subscribe(contact => this.contact = contact);
+    // this.getContact();
+    this.getContactMock();
   }
+
+  getContactMock() {
+    this.contact = this._serviceContact.getContactMock();
+  }
+  /*getContact() {
+    this._serviceContact.getContact().subscribe(contact => this.contact = contact);
+  }*/
 }

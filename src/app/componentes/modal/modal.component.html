@@ -2,7 +2,11 @@
   <!-- Modal content -->
   <div class="modal-content">
     <button id="close" class="close">&times;</button>
-    <p> <img src="../../favicon.ico"> Em construção ...</p>
-    <app-card></app-card>
+    <p>
+      <img src="../../favicon.ico"> Prateleira de Componentes (Em construção ...) </p>
+    <div class="container">
+      <app-card [param]="exemplo" class="component"></app-card>
+      <app-search></app-search>
+    </div>
   </div>
 </div>

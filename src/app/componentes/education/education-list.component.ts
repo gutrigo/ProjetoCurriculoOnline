@@ -25,13 +25,29 @@ export class EducationListComponent implements OnInit {
   ) {}
 
   ngOnInit() {
+    // this.getSchools();
+    // this.getOcourse();
+    this.getSchoolMock();
+    this.getOcourseMock();
+  }
 
+  getSchoolMock() {
+    this.schools = this._serviceSchools.getSchoolsMock();
+  }
+
+  getOcourseMock() {
+    this.ocourses = this._serviceOcourse.getOcourseMock();
+  }
+
+ /*getSchools() {
     this._serviceSchools.getSchools().subscribe(school => {
       this.schools = school;
     });
+  }
 
+  getOcourse() {
     this._serviceOcourse.getOcourses().subscribe(ocourse => {
       this.ocourses = ocourse;
     });
-  }
+  } */
 }

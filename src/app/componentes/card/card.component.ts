@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Project } from '../../models/project';
+import { Exemplo } from '../../models/exemplo';
 
 @Component({
   selector: 'app-card',
@@ -9,12 +10,16 @@ import { Project } from '../../models/project';
 
 export class CardComponent implements OnInit {
   @Input() param: any;
-  card: any;
+  card: Exemplo;
 
   constructor() {}
 
   ngOnInit() {
-    this.card = this.param;
+    this.getParam();
+    console.log(this.card);
   }
 
+  getParam() {
+    this.card = this.param;
+  }
 }

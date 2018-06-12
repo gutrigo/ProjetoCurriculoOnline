@@ -18,6 +18,7 @@ import { SchoolsServices } from './services/schools/schools.service';
 import { OcourseService } from './services/ocourse/ocourse.service';
 import { ModalComponent } from './componentes/modal/modal.component';
 import { CardComponent } from './componentes/card/card.component';
+import { SearchComponent } from './componentes/search/search.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { CardComponent } from './componentes/card/card.component';
     FooterComponent,
     WorksListComponent,
     ModalComponent,
-    CardComponent
+    CardComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

@@ -1,10 +1,9 @@
 <section class="card item">
-    <img class="project-image" src="{{ card.imagesUrl }}">
-      <a href="{{ card.urlSite }}">{{ card.title }}</a>
-      <div class="date-text">{{ card.dates }}</div>
+      <img class="project-image" src="{{ card?.imagesUrl }}">
+      <a href="{{ card?.urlSite }}">{{ card?.title }}</a>
+      <div class="date-text">{{ card?.dates }}</div>
     <hr>
     <div class="item">
-        <p>{{ card.description }}</p>
+        <p>{{ card?.description }}</p>
     </div>
-
 </section>

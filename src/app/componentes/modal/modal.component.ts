@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Exemplo } from '../../models/exemplo';
 
 @Component({
   selector: 'app-modal',
@@ -7,14 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class ModalComponent implements OnInit {
-
-  card: {
-    imagesUrl: string;
-    title: string;
-    url: string;
-  };
+  exemplo: Exemplo;
   constructor() { }
 
   ngOnInit() {
+    this.getExemplo();
   }
+  getExemplo() {
+    const e = new Exemplo();
+    e.id = 0;
+    e.title = 'Exemplo';
+    e.dates = ' 01 teste - 02 teste';
+    e.description = 'ahdsuashduahdaushdad';
+    e.urlSite = 'www.google.com.br';
+    e.imagesUrl = '../../assets/img_avatar3.png';
+
+    this.exemplo = e;
+    console.log(this.exemplo);
+  }
+
 }

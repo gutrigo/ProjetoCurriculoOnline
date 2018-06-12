@@ -6,6 +6,7 @@ import 'rxjs/add/operator/map';
 import { catchError, map, tap } from 'rxjs/operators';
 import { Bio } from '../../models/bio';
 import { BioServiceInterface } from '../../interfaces/bio-service-interface';
+import { Contact } from '../../models/contact';
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -21,4 +22,16 @@ export class BiografiaService implements BioServiceInterface {
   getBio(): Observable<any> {
     return this.http.get(this.apiUrl);
     }
+
+  getBioMock(): Bio {
+    const bio = new Bio();
+    bio.id = 0;
+    bio.name = 'Gustavo Trigo';
+    bio.picture = '../../assets/eu.jpg';
+    bio.role = 'Desenvolvedor Web';
+    bio.welcomeMessage = 'Fácil Aprendizado foco nos resultados e qualidade na entrega dos serviços.';
+
+    return bio;
+
+  }
 }
