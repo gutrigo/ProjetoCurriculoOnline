@@ -1,7 +1,9 @@
 <div class="dropdown">
-  <input type="text" placeholder="Search.." id="myInput" (keyup)="filterItems($event.target.value)">
-  <button (click)="myFunction()" class="dropbtn">V</button>
-  <div id="myDropdown" class="dropdown-content" >
+  <div class="item">
+    <input type="text" placeholder="Search.." id="myInput" (keyup)="filterItems($event.target.value)">
+    <button (click)="myFunction()" class="dropbtn fa fa-caret-down"></button>
+  </div>
+  <div id="myDropdown" class="dropdown-content">
     <a *ngFor="let fruit of fruits" href="#fruit">{{fruit}}</a>
   </div>
 </div>

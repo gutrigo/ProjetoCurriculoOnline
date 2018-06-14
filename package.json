@@ -12,6 +12,7 @@
   },
   "private": true,
   "dependencies": {
+    "@angular/animations": "^4.2.1",
     "@angular/common": "^4.2.1",
     "@angular/compiler": "^4.2.1",
     "@angular/core": "^4.2.1",
@@ -20,7 +21,9 @@
     "@angular/platform-browser": "^4.2.1",
     "@angular/platform-browser-dynamic": "^4.2.1",
     "@angular/router": "^4.2.1",
+    "angular-font-awesome": "^3.1.2",
     "core-js": "^2.4.1",
+    "font-awesome": "^4.7.0",
     "rxjs": "^5.5.11",
     "zone.js": "^0.8.19"
   },

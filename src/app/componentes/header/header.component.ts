@@ -19,6 +19,7 @@ export class HeaderComponent implements OnInit {
   skills: Skills[];
   modal: boolean;
   library: boolean;
+  componente: boolean;
 
 
   constructor(
@@ -75,6 +76,14 @@ export class HeaderComponent implements OnInit {
     return document.getElementById('close');
   }
 
+  mouseEnter() {
+    console.log('teste');
+    this.componente = true;
+ }
+
+ mouseLeave() {
+  this.componente = false;
+ }
    /* private getSkills() {
     this._serviceSkills.
     getSkills().subscribe(skill => this.skills = skill,

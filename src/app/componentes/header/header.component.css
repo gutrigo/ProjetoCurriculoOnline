@@ -11,17 +11,58 @@ h5,
 h6 {
   padding: 0;
   margin: 0;
-  font-family: 'Finger Paint', cursive;
-
 }
 
+#topContacts {
+  justify-content: left;
+}
+
+.puzzle {
+  width: 50px;
+}
+.componente {
+  display: none;
+}
+.puzzle:hover {
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+  transition: 2s;
+}
+#componente {
+  display: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
 .project-image {
   width: 300px;
 }
 
-.infoBox { background-color: #FFF; width: 300px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; border: 2px solid #f5a623; border-radius: 3px; margin-top: 10px }
-.infoBox p { padding: 0 15px }
-.infoBox:before { border-left: 10px solid transparent; border-right: 10px solid transparent; border-bottom: 10px solid #f5a623; top: -10px; content: ""; height: 0; position: absolute; width: 0; left: 138px }
+.infoBox {
+  background-color: #fff;
+  width: 300px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  border: 2px solid #f5a623;
+  border-radius: 3px;
+  margin-top: 10px;
+}
+.infoBox p {
+  padding: 0 15px;
+}
+.infoBox:before {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #f5a623;
+  top: -10px;
+  content: "";
+  height: 0;
+  position: absolute;
+  width: 0;
+  left: 138px;
+}
 
 .clear-fix {
   overflow: auto;
@@ -33,11 +74,11 @@ h6 {
   padding: 0 5%;
 }
 
-
-h1, .topnav {
+h1,
+.topnav {
   font-size: 30px;
   color: #f5a623;
-  line-height: 48px;
+  line-height: 74px;
   display: inline;
 }
 
@@ -72,9 +113,7 @@ h3,
 h4,
 h5 {
   padding: 10px 5%;
-
 }
-
 
 .date-text {
   font-style: italic;
@@ -90,7 +129,6 @@ h5 {
   color: #999;
   line-height: 16px;
   float: right;
-
 }
 
 p {
@@ -109,7 +147,7 @@ a {
 .welcome-message {
   font-style: italic;
   font-size: 18px;
-  color: #f3f3f3;
+  color: #454545;
   line-height: 28px;
   margin: 0;
   width: 100%;
@@ -126,13 +164,16 @@ a {
 
 .orange-text {
   color: #f5ae23;
+  font-weight: bold;
 }
 
 .white-text {
-  font-weight: bold;
-  color: #fff;
+  color: #1199c3;
 }
 
+.skill-text {
+  color: #999;
+}
 .gray {
   background-color: #f3f3f3;
   padding-bottom: 10px;
@@ -145,7 +186,7 @@ a {
 
 /* TODO: Replace with image later */
 #header {
-  background-color: #626066;
+  background-color: #fff;
 }
 
 .flex-box {
@@ -154,7 +195,6 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-
 }
 .name {
   justify-content: flex-start;
@@ -188,7 +228,6 @@ img {
 }
 
 span {
-  margin: auto;
   padding: 05px;
 }
 
@@ -218,7 +257,7 @@ span {
   }
 }
 
-@media only screen and (max-width:900px) {
+@media only screen and (max-width: 900px) {
   .biopic {
     width: 175px;
   }
@@ -234,7 +273,7 @@ span {
   .welcome-message {
     display: none;
   }
-  #skills-h3{
+  #skills-h3 {
     display: none;
   }
   h1 {
@@ -260,5 +299,3 @@ span {
     display: block;
   }
 }
-
-

@@ -2,14 +2,18 @@
 
 <div id="header" class="center-content clear-fix">
   <div class="flex-box">
+    <!--<button class="flex-item topnav btnBox" (click)='openLibrary()' >f12e</button> -->
     <h1 id="name" class="name"> {{ bio?.name }} </h1>
-    <div>
-      <button class="flex-item topnav btnBox" (click)='openLibrary()' >Prateleira de Componentes</button>
-    </div>
+    <picture>
+      <img class="puzzle" alt="Biblioteca de componentes" src="../../../assets/brick-icon.png" (click)='openLibrary()' />
+      <h4 *ngIf="componente == true" id="componente" (mouseenter)="mouseEnter()"  (mouseleave) ="mouseLeave()">Componentes</h4>
+    </picture>
+
   </div>
-  <br>
+
   <span>{{ bio?.role }}</span>
   <hr>
+
   <ul id="topContacts" class="flex-box">
     <span class="flex-item">
       <span class="orange-text">email</span>
@@ -33,13 +37,14 @@
     <img src="{{ bio?.picture }}" class="biopic" alt="Foto de perfil">
   </picture>
 
-  <span class="welcome-message white-text ">{{ bio?.welcomeMessage }}</span>
-  <h3 id="skills-h3">Skills:</h3>
-  <ul id="skills" class="flex-column">
-    <li class="flex-item" *ngFor="let skill of skills">
-      <span class="white-text">{{ skill?.skill }}</span>
-    </li>
-  </ul>'
+  <span class="welcome-message">{{ bio?.welcomeMessage }}</span>
 
+  <div class="flex-box">
+    <ul id="skills" class="flex-column">
+      <li class="flex-item" *ngFor="let skill of skills">
+        <span class="skill-text">{{ skill?.skill }}</span>
+      </li>
+    </ul>
+  </div>
 
 </div>

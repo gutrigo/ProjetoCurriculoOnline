@@ -49,7 +49,7 @@ h5,
 h6 {
   padding: 0;
   margin: 0;
-  font-family: "Finger Paint", cursive;
+  font-family: 'Roboto', sans-serif;
 }
 
 .project-image {
@@ -236,6 +236,7 @@ span {
 @media only screen and (max-width: 360px) {
   .card {
     width: 93%;
-    height: 95%;
+    height: 98%;
+    margin: 0;
   }
 }

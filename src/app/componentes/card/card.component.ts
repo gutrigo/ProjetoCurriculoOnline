@@ -16,7 +16,7 @@ export class CardComponent implements OnInit {
 
   ngOnInit() {
     this.getParam();
-    console.log(this.card);
+    // console.log(this.card);
   }
 
   getParam() {

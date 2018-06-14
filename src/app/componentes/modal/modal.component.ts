@@ -24,7 +24,7 @@ export class ModalComponent implements OnInit {
     e.imagesUrl = '../../assets/img_avatar3.png';
 
     this.exemplo = e;
-    console.log(this.exemplo);
+    // console.log(this.exemplo);
   }
 
 }

@@ -12,7 +12,7 @@ fruits = ['apple', 'banana', 'grapes', 'mango', 'orange'];
   }
 
   ngOnInit() {
-    console.log(this.filterItems('ap'));
+    // console.log(this.filterItems('ap'));
   }
 
   myFunction() {

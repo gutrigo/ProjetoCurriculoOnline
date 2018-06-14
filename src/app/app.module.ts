@@ -19,6 +19,7 @@ import { OcourseService } from './services/ocourse/ocourse.service';
 import { ModalComponent } from './componentes/modal/modal.component';
 import { CardComponent } from './componentes/card/card.component';
 import { SearchComponent } from './componentes/search/search.component';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { SearchComponent } from './componentes/search/search.component';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    AngularFontAwesomeModule
   ],
   providers: [BiografiaService, HttpClient, ContactService, SkillsService, WorksService, ProjectsService, SchoolsServices, OcourseService],
   bootstrap: [AppComponent]
